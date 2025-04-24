@@ -23,13 +23,23 @@ body.modal-open {
 
 /* Banners */
 header img,
-#banner_viaerotika img {
+#banner_casas img {
   max-width: 1024px;
   width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
 }
+
+.titulo-com-imagens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
+  flex-wrap: nowrap;
+}
+
 
 /* Menu */
 nav {
