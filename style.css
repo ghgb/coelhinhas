@@ -235,14 +235,21 @@ hr {
 }
 
 /* Responsividade */
+
+}
+
 @media (max-width: 768px) {
   .menu-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr; /* Mantém 1 coluna em telas menores */
+    padding: 20px 15px; /* Reduz o padding para dispositivos móveis */
+    row-gap: 20px; /* Ajusta o espaçamento entre as linhas */
   }
 }
 
 @media (max-width: 480px) {
   .menu-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* 1 coluna ainda */
+    padding: 15px 10px; /* Menos padding em telas muito pequenas */
+    row-gap: 15px; /* Ajusta o espaçamento para telas menores */
   }
 }
