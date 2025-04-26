@@ -56,7 +56,7 @@ nav h2 {
 
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+  grid-template-columns: 1fr); /* 3 colunas */
   grid-auto-rows: auto; /* altura automática para cada linha */
   column-gap: 20px; /* espaçamento entre colunas */
   row-gap: 30px;    /* espaçamento entre linhas */
@@ -66,7 +66,7 @@ nav h2 {
 }
 
 .menu-item {
-  background: #c93e9f;
+  background: #d766b5;
   border-radius: 10px;
   padding: 10px;
   text-align: center;
