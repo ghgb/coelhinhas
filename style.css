@@ -135,7 +135,11 @@ section {
 section h1,
 section h2,
 section p {
-  font-size: 1.5em;
+  background-color: rgba(255, 255, 255, 0.8); /* fundo branco translúcido */
+  color: #4b0076; /* cor do texto (vinho escuro) */
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-weight: bold;
   margin-bottom: 5px; /* Reduzindo o espaço entre os parágrafos */
 }
 
