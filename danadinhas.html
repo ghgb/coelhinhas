@@ -5,6 +5,11 @@
   <title>Coelhinhas - As Danadinhas - Mondubim</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script>
+    if (localStorage.getItem("ageVerified") !== "true") {
+      window.location.href = "index.html"; // ou a página principal com o age gate
+    }
+  </script>
 </head>
 <body>
 
@@ -13,9 +18,11 @@
     <p>
       Rua Jacanauba, 79 - Mondubim<br>
       Segunda a Sexta, das 10h às 19h<br>
-      Telefones:</strong> (85) 99680-3459 | Fixo: (85) 2134-2212<br>
+      Contatos: (85) 99680-3459 | Fixo: (85) 2134-2212<br>
     </p>
-    <a href="https://wa.me/5585996803459" target="_blank">Clique aqui para falar com a gente no whatsapp</a>
+    <a href="https://wa.me/5585996803459?text=Ol%C3%A1%20vi%20seu%20perfil%20no%20site%20Coelhinhas%20Fortaleza%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank">
+      Clique aqui para falar com uma Danadinha pelo WhatsApp
+    </a>
 </section>  
  
 <section>

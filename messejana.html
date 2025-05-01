@@ -5,6 +5,11 @@
   <title>Coelhinhas - Messejana</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script>
+    if (localStorage.getItem("ageVerified") !== "true") {
+      window.location.href = "index.html"; // ou a página principal com o age gate
+    }
+  </script>
 </head>
 <body>
 
@@ -13,9 +18,11 @@
     <p>
       Rua Pero Vaz, 83 - Messejana<br>
       Segunda a Sexta, das 10h às 19h<br>
-      (85) 99679-8559 | Fixo: (85) 3222-1760<br>
+      Contatos: (85) 99679-8559 | Fixo: (85) 2130-4282<br>
     </p>
-    <a href="https://wa.me/5585996798559" target="_blank">Clique aqui para falar com a gente no whatsapp</a>
+    <a href="https://wa.me/5585996798559?text=Ol%C3%A1%20vi%20seu%20perfil%20no%20site%20Coelhinhas%20Fortaleza%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank">
+      Clique aqui para falar com uma Coelhinha pelo WhatsApp
+    </a>
    
   </section>
 

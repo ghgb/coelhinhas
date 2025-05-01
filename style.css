@@ -1,8 +1,7 @@
-/* Estilo base */
-
+/* Estilo geral */
 body {
   background-color: #fa70d0;
-  color: #ffffff; /* alterado de hotpink para dourado */
+  color: #ffffff; 
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-size: 1.2em;
@@ -32,6 +31,19 @@ header img,
   margin: 0 auto;
 }
 
+
+h1 {
+  font-size: 2.5rem; 
+  font-weight: bold; 
+  color: white; 
+  text-align: center; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+  letter-spacing: 1px; 
+  margin: 20px 0; 
+  text-transform: uppercase; 
+  transition: all 0.3s ease; 
+}
+
 .titulo-com-imagens {
   display: flex;
   align-items: center;
@@ -40,7 +52,6 @@ header img,
   margin: 30px 0;
   flex-wrap: nowrap;
 }
-
 
 /* Menu */
 nav {
@@ -51,22 +62,27 @@ nav {
 
 nav h2 {
   font-size: 1.5em;
-  color: #ffffff; /* alterado de hotpink */
+  color: #ffffff; 
   margin-bottom: 20px;
 }
 
 .menu-grid {
   display: grid;
-  grid-template-columns: 1fr); /* 3 colunas */
-  grid-auto-rows: auto; /* altura automática para cada linha */
-  column-gap: 20px; /* espaçamento entre colunas */
-  row-gap: 30px;    /* espaçamento entre linhas */
+  grid-template-columns: 1fr; 
+  grid-auto-rows: auto; 
+  column-gap: 20px; 
+  row-gap: 30px;    
   padding: 30px 20px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .menu-item {
+  text-decoration: underline;
+  color: #4b0076; 
+  text-decoration-color: #fa70d0; 
+  text-decoration-thickness: 3px; 
+  text-underline-offset: 3px; 
   background: #d766b5;
   border-radius: 10px;
   padding: 10px;
@@ -79,6 +95,11 @@ nav h2 {
 .menu-item a:hover {
   background-color: #fa70d0;
   color: white;
+}
+
+.viaerotika {
+  color: #ffffff; 
+  background: #d766b5;
 }
 
 section a {
@@ -99,8 +120,8 @@ section a:hover {
 }
 
 .menu-item a {
-  background-color: rgba(255, 255, 255, 0.8); /* fundo branco translúcido */
-  color: #4b0076; /* cor do texto (vinho escuro) */
+  background-color: rgba(255, 255, 255, 0.8); 
+  color: #4b0076; 
   padding: 8px 10px;
   border-radius: 6px;
   font-weight: bold;
@@ -112,8 +133,8 @@ section a:hover {
 
 .menu-item img {
   width: 30%;
-  height: 30%; /* Define altura fixa */
-  object-fit: cover; /* Garante que a imagem preencha sem distorcer */
+  height: 30%; 
+  object-fit: cover; 
   border-radius: 8px;
 }
 
@@ -135,21 +156,17 @@ section {
 section h1,
 section h2,
 section p {
-  background-color: rgba(255, 255, 255, 0.8); /* fundo branco translúcido */
-  color: #4b0076; /* cor do texto (vinho escuro) */
+  background-color: rgba(255, 255, 255, 0.8); 
+  color: #4b0076; 
   padding: 8px 10px;
   border-radius: 6px;
   font-weight: bold;
-  margin-bottom: 5px; /* Reduzindo o espaço entre os parágrafos */
-}
-
-/* Estilo para as linhas horizontais */
-hr {
-  margin: 5px 0; /* Diminuindo o espaço ao redor da linha */
+  margin-bottom: 5px; 
 }
 
 
-/* Grade de imagens (miniaturas clicáveis) */
+
+
 .page-images {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -189,7 +206,7 @@ hr {
 .lightbox-image {
   max-width: 90%;
   max-height: 90%;
-  box-shadow: 0 0 20px #ffffff; /* alterado de hotpink */
+  box-shadow: 0 0 20px #ffffff; 
   border-radius: 10px;
   transition: 0.3s ease;
   animation: zoomIn 0.4s ease;
@@ -197,7 +214,7 @@ hr {
 
 .lightbox-close, .lightbox-prev, .lightbox-next {
   position: absolute;
-  color: #ffffff; /* alterado de hotpink */
+  color: #ffffff; 
   font-size: 30px;
   cursor: pointer;
   top: 50%;
@@ -208,13 +225,13 @@ hr {
 
 .lightbox-close {
   right: 30px;
-  top: 10px; /* Alinha o botão de fechar no topo */
+  top: 10px; 
 }
 
 .lightbox-prev, .lightbox-next {
   top: 50%;
   transform: translateY(-50%);
-  font-size: 40px; /* Aumenta um pouco o tamanho das setinhas */
+  font-size: 40px; 
 }
 
 .lightbox-prev {
@@ -242,20 +259,19 @@ hr {
 
 /* Responsividade */
 
-}
 
 @media (max-width: 768px) {
   .menu-grid {
-    grid-template-columns: 1fr; /* Mantém 1 coluna em telas menores */
-    padding: 20px 15px; /* Reduz o padding para dispositivos móveis */
-    row-gap: 20px; /* Ajusta o espaçamento entre as linhas */
+    grid-template-columns: 1fr;
+    padding: 20px 15px; 
+    row-gap: 20px; 
   }
 }
 
 @media (max-width: 480px) {
   .menu-grid {
-    grid-template-columns: 1fr; /* 1 coluna ainda */
-    padding: 15px 10px; /* Menos padding em telas muito pequenas */
-    row-gap: 15px; /* Ajusta o espaçamento para telas menores */
+    grid-template-columns: 1fr; 
+    padding: 15px 10px; 
+    row-gap: 15px; 
   }
 }

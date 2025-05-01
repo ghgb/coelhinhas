@@ -3,72 +3,104 @@
 <head>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
-  <title>Coelhinhas Fortaleza - Acompanhantes Fortaleza</title>
+  <title>Acompanhantes Fortaleza - As Coelhinhas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <script src="lightbox.js" defer></script>
 </head>
 <body>
 
+<!-- Aviso +18 -->
+<div id="age-gate">
+  <h1>Conteúdo +18</h1>
+  <p>Este site é destinado apenas para maiores de 18 anos. Você confirma que tem idade legal para continuar?</p>
+  <button onclick="enterSite()">Sim, tenho +18</button>
+  <button onclick="window.location.href='https://www.google.com'">Não</button>
+</div>
+
+<style>
+  #age-gate {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background-color: rgba(0,0,0,0.95);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    text-align: center;
+    padding: 20px;
+  }
+  #age-gate button {
+    margin: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #c00;
+    color: white;
+  }
+</style>
+
+<script>
+  // Se já confirmou a idade, esconde o age gate
+  if (localStorage.getItem("ageVerified") === "true") {
+    document.getElementById("age-gate").style.display = "none";
+  }
+
+  function enterSite() {
+    localStorage.setItem("ageVerified", "true");
+    document.getElementById('age-gate').style.display = 'none';
+  }
+</script>
+
   <!-- Banner principal -->
   <header id="banner_coelhinhas">
     <img src="img/headers/coelhinhas.png" alt="Banner Coelhinhas">
   </header>
 
-  <!-- Segundo banner -->
-  <header id="banner_casas">
-    <img src="img/headers/casas.png" alt="Venha se divertir!">
-  </header>
-  <br>Clique nos links abaixo para ver <strong>Fotos</strong> das nossa coelhinhas e nossos endereços.</p>
-  
-  <!-- Menu de endereços -->
-  
+  <h1>Curioso para ver as coelhinhas? <br> Clique nos links abaixo para fotos e endereços!</h1>
 
+  <!-- Menu de endereços -->
   <nav class="menu-grid">
-    
     <div class="menu-item">
-      <a href="danadinhas.html"> NOSSAS PARCEIRAS: AS DANADINHAS DO MONDUBIM:
-        <br> Rua Jacanauba, 79 - Mondubim</a>
+      <a href="parquelandia.html">COELHINHAS PARQUELÂNDIA (24 horas): <br> Rua José de Pontes, 89 - Parquelândia</a>
+      <img src="img/headers/coelinhasmall.jpg" alt="Parquelândia">
+    </div>
+    <div class="menu-item">
+      <a href="danadinhas.html"> NOSSAS PARCEIRAS: AS DANADINHAS DO MONDUBIM: <br> Rua Jacanauba, 79 - Mondubim</a>
       <img src="img/danadinhas/danadinhas05.jpg" alt="Danadinhas">
     </div>
-
     <div class="menu-item">
-      <a href="parquelandia.html">COELHINHAS PARQUELÂNDIA: 
-        <br> Rua José de Pontes, 89 - Parquelândia</a>
-    <img src="img/parquelandia/parq11.jpg" alt="Parquelândia">
+      <a href="joquei.html">COELHINHAS JÓQUEI CLUBE: <br> Rua Daniel Mendonça, 45 - Jóquei Clube</a>
+      <img src="img/joquei/joquei02.jpg" alt="Jóquei Clube">      
     </div>
-
     <div class="menu-item">
-      <a href="joquei.html">COELHINHAS JÓQUEI CLUBE:
-        <br> Rua Daniel Mendonça, 45 - Jóquei Clube</a>
-      <img src="img/joquei/joquei02.jpeg" alt="Jóquei Clube">      
-    </div>
-
-    <div class="menu-item">
-      <a href="maraponga.html">COELHINHAS MARAPONGA / MONDUBIM:
-        <br> Rua Topázio, 65 - Maraponga / Mondubim</a>
+      <a href="maraponga.html">COELHINHAS MARAPONGA / MONDUBIM: <br> Rua Topázio, 65 - Maraponga / Mondubim</a>
       <img src="img/maraponga/topazio01.jpg" alt="Maraponga">      
     </div>
-
     <div class="menu-item">
-      <a href="itaperi.html">COELHINHAS ITAPERI:
-        <br> Rua Doutor Justa Araújo, 1292 - Itaperi (Ao lado da UECE)</a>
+      <a href="itaperi.html">COELHINHAS ITAPERI: <br> Rua Doutor Justa Araújo, 1292 - Itaperi (Ao lado da UECE)</a>
       <img src="img/itaperi/itaperi01.jpg" alt="Itaperi">
     </div>
-    
     <div class="menu-item">
-      <a href="messejana.html">COELHINHAS MESSEJANA:
-        <br>  Rua Pero Vaz, 83 - Messejana</a>
-        <img src="img/messejana/mess01.jpg" alt="Messejana">
+      <a href="messejana.html">COELHINHAS MESSEJANA: <br> Rua Pero Vaz, 83 - Messejana</a>
+      <img src="img/messejana/mess01.jpg" alt="Messejana">
     </div>
-    
     <div class="menu-item">
-      <a href="montese.html">COELHINHAS MONTESSE:
-        <br> Rua Alfredo de Castro 743 - Montese (Por trás da loja Padre Cícero)</a>
+      <a href="montese.html">COELHINHAS MONTESE: <br> Rua Alfredo de Castro 743 - Montese (Por trás da loja Padre Cícero)</a>
       <img src="img/montese/montese15.jpg" alt="Montese">
     </div>
+    <div class="viaerotika">
+      <h2>VIA EROTIKA SEX SHOP<br> Whatsapp: (85) 99695-1485 | Fixo: (85) 2010-1146</h2>
+      <img src="img/headers/viaerotika300.png" alt="Via Erótika Sex Shop">
+    </div>
   </nav>
-    <!-- Rodapé -->
+
+  <!-- Rodapé -->
   <footer>
     <p>www.coelhinhasfortaleza.com.br &reg; Todos os direitos reservados &copy;</p>
   </footer>
