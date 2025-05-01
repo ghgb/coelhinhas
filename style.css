@@ -4,7 +4,7 @@ body {
   color: #ffffff; 
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-size: 1.2em;
+  font-size: clamp(14px, 2.5vw, 20px);
   line-height: 1.5;
   text-align: center;
   margin: 0;
@@ -33,7 +33,7 @@ header img,
 
 
 h1 {
-  font-size: 2.5rem; 
+  font-size: clamp(1.8rem, 4vw, 2.5rem); 
   font-weight: bold; 
   color: white; 
   text-align: center; 
@@ -61,7 +61,7 @@ nav {
 }
 
 nav h2 {
-  font-size: 1.5em;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
   color: #ffffff; 
   margin-bottom: 20px;
 }
@@ -258,14 +258,29 @@ section p {
   border-radius: 8px;
 }
 
-/* Responsividade */
 
+.menu-grid h2,
+.menu-grid p,
+.menu-grid a,
+section h1,
+section h2,
+section p,
+footer {
+  font-size: clamp(14px, 2vw, 18px);
+}
+
+
+/* Responsividade */
 
 @media (max-width: 768px) {
   .menu-grid {
     grid-template-columns: 1fr;
     padding: 20px 15px; 
     row-gap: 20px; 
+  }
+
+  .menu-grid h2, .menu-grid p, .menu-grid a {
+    font-size: 16px; /* tamanho menor para tablets */
   }
 }
 
@@ -275,4 +290,9 @@ section p {
     padding: 15px 10px; 
     row-gap: 15px; 
   }
+
+  .menu-grid h2, .menu-grid p, .menu-grid a {
+    font-size: 14px; /* ainda menor para celulares */
+  }
 }
+
